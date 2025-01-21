@@ -1,3 +1,7 @@
 export const getImageUrl = (path) => {
-    return new URL(`/assets/${path}`, import.meta.url).href;
-  };
+  if (!path) {
+    console.error("Path is undefined or empty.");
+    return "";
+  }
+  return `/src/assets/${path}`;
+};
