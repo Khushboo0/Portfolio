@@ -3,5 +3,5 @@ export const getImageUrl = (path) => {
     console.error("Path is undefined or empty.");
     return "";
   }
-  return `/src/assets/${path}`;
+  return `/assets/${path}`;
 };
